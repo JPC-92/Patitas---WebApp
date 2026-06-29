@@ -1,0 +1,262 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    /* Fondo */
+    background-color: white;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    /* Usamos flexbox para centrar todos los elementos en la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+/* Contenedor principal de los formularios */
+.formulario {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px black;
+    border: 2px solid white;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.logo {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 15px;
+
+}
+
+.logo img {
+    width:180px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos de los formularios */
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* Cuando el campo es incorrecto */
+.campo-error input {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+/* Cuando el campo es correcto */
+.campo-correcto input{
+    border: 2px solid rgb(40, 167, 69) !important;
+    outline: none;
+}
+
+/* Estilo del botón */
+.button, .boton-login {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(40, 167, 69);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.button:hover, .boton-login:hover {
+    background-color: rgb(33, 136,56);
+}
+
+/* Mensajes de error y exito */
+.alerta-error {
+    background-color: rgb(248, 215, 218);
+    color: rgb(114, 28, 36);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid rgb(245, 198, 203);
+}
+
+.alerta-exito {
+    background-color: whitesmoke;
+    color: rgb(40, 167, 69);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* -------- Formulario de citas --------*/
+
+.form-citas {
+    max-width: 500px;
+    padding: 30px 20px;
+}
+
+.form-citas p.mensaje2 {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.separador {
+    border: 0;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin: 25px 0;
+}
+
+/* Campos de fecha y hora */
+
+.campo-fecha-hora {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.campo-fecha-hora .campo {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Diseño de la tabla*/
+
+.tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tabla-citas th {
+    padding: 10px 5px;
+    border-bottom: 2px solid rgb(40, 167, 69);
+}
+
+.tabla-citas td.vacia {
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+}
+
+.cerrar-sesion {
+    display:block;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.boton-registro a {
+    color: rgb(40, 167, 69);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton-cancelar {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: background 0.3s;
+}
+
+.boton-cancelar:hover {
+    background-color: rgb(192, 57, 43);
+}
+
+.boton-editar {
+    background-color: rgb(52, 152, 219);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85em;
+    margin-right: 5px;
+}
+
+.boton-registro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Tabla de administracion de citas*/
+.contenedor-admin {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px #00000080;
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-admin h1 {
+    text-align: center;
+}
+
+.contenedor-admin p {
+    text-align: center;
+}
+
+.tabla-citas td {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.input-buscador {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
