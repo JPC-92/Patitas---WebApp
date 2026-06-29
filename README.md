@@ -9,7 +9,6 @@ El proyecto implementa un sistema de control de acceso por roles (Administrador 
 * **Sistema de Roles:** Acceso diferenciado para administradores y clientes.
 * **Gestión de Citas:** Programación de citas asociadas a mascotas específicas con control de duplicidades (única fecha y hora).
 * **Gestión de Mascotas:** Registro de animales vinculados a sus respectivos dueños.
-* **Diseño Limpio:** Separación total de la lógica y la presentación, utilizando hojas de estilo CSS dedicadas (sin estilos en línea) para un mantenimiento óptimo.
 
 ## 🛠️ Tecnologías Utilizadas
 
