@@ -4,7 +4,7 @@ Aplicación web integral para la gestión de usuarios, mascotas y citas, desarro
 
 El proyecto implementa un sistema de control de acceso por roles (Administrador y Cliente) y gestiona de manera eficiente las relaciones en la base de datos entre los dueños, sus mascotas y el calendario de citas.
 
-## 🚀 Funcionalidades Principales
+## 🚀 Funcionalidades Principales 
 
 * **Sistema de Roles:** Acceso diferenciado para administradores y clientes.
 * **Gestión de Citas:** Programación de citas asociadas a mascotas específicas con control de duplicidades (única fecha y hora).
